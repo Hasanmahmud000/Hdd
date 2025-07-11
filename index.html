@@ -290,6 +290,22 @@
       align-items: center;
     }
 
+.server-content * {
+  border: none !important;
+  outline: none !important;
+}
+
+.server-header-text {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
     .server-list {
       color: #fff;
       display: flex;
@@ -351,7 +367,7 @@
 .sub-tab-btns .active {
   background: #0af;
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0,170,255,0.5);
+  box-shadow: 0 0 px rgba(0,170,255,0.5);
 }
 
 
@@ -730,7 +746,7 @@
 <!-- Server Modal -->
 <div id="serverModal" class="server-modal" onclick="closeServerModal()">
   <div class="server-content" onclick="event.stopPropagation();">
-    <div style="color: #fff; margin-bottom: 22px; text-align: left; font-weight: bold; width: 95%;">Multiple Links Available</div>
+    <div style="color: #fff; margin-bottom: 22px; text-align: left; font-weight: bold; width: 95%; border: none; outline: none;">Multiple Links Available</div>
     <div id="serverList" class="server-list" style="text-align: center;">
       <!-- Server links will be populated here -->
     </div>
