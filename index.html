@@ -278,45 +278,46 @@
     }
 
     .server-content {
-  background: #222;
-  border-radius: 50px;
-  padding: 16px;
-  max-width: 80%;
-  width: 280px;
-  max-height: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+      background: #222;
+      border-radius: 50px;
+      padding: 16px;
+      max-width: 80%;
+      width: 280px;
+      max-height: 80%;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.server-list {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
+    .server-list {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
 
-.server-item {
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: normal;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 5px;
-  width: 100%;
-  background: none;
-  border: none;
-}
+    .server-item {
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+      width: 100%;
+      background: none;
+      border: none;
+    }
 
-.server-item:hover {
-  color: #0af;
-}
+    .server-item:hover {
+      color: #0af;
+    }
 
  /* Modified sub-tab styles */
 .sub-tab-btns {
@@ -729,7 +730,7 @@
 <!-- Server Modal -->
 <div id="serverModal" class="server-modal" onclick="closeServerModal()">
   <div class="server-content" onclick="event.stopPropagation();">
-    <div style="color: #fff; margin-bottom: 22px; text-align: left; font-weight: bold; width: 95%; border: none; outline: none;">Multiple Links Available</div>
+    <div style="color: #fff; margin-bottom: 22px; text-align: left; font-weight: bold; width: 95%;">Multiple Links Available</div>
     <div id="serverList" class="server-list" style="text-align: center;">
       <!-- Server links will be populated here -->
     </div>
