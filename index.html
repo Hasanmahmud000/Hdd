@@ -278,17 +278,27 @@
     }
 
     .server-content {
-      background: #222;
-      border-radius: 50px;
-      padding: 16px;
-      max-width: 80%;
-      width: 280px;
-      max-height: 80%;
-      overflow: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  background: #222;
+  border-radius: 50px;
+  padding: 16px;
+  max-width: 80%;
+  width: 280px;
+  max-height: 80%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* স্ক্রলবার সম্পূর্ণ লুকানো */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Webkit browsers এর জন্য স্ক্রলবার লুকানো */
+.server-content::-webkit-scrollbar {
+  display: none;
+}
+
 
     .server-list {
       color: #fff;
